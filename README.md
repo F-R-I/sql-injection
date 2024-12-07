@@ -30,8 +30,8 @@ CREATE TABLE users (
 Now we will add some sample users to the users table. We will insert 3 test users.
 
 Inserting User Data:
-sql
-```
+```sql
+
 INSERT INTO users (username, email) VALUES ('root', 'root@example.com');
 INSERT INTO users (username, email) VALUES ('admin', 'admin@example.com');
 INSERT INTO users (username, email) VALUES ('admin_root', 'admin_root@example.com');
@@ -179,27 +179,17 @@ html
 ```
 5. Explanation of How to Perform the Test
 Unsafe SQL Injection Test: When you enter a username like ```1' OR 1=1 # ``` in the form, it will retrieve all user data from the database, exposing it to a significant security risk.
+![Logo](/2.png)
 Safe SQL Injection Test: By using prepared statements, the query is safe, and the application will not be vulnerable to SQL Injection attacks since the inputs are validated and treated securely.
-6. Security Notes:
+7. Security Notes:
 An example of how SQL Injection occurs with unsafe queries has been shown.
 The solution provided using Prepared Statements protects against this vulnerability.
 Always validate user inputs and avoid queries that directly use user input.
-7. Conclusion
+8. Conclusion
 A database was created with a users table and populated with test data.
 A PHP application was built to demonstrate SQL Injection and provide a secure solution using prepared statements.
 Using these methods, developers can learn how to secure their applications against SQL Injection attacks.
-vbnet
-a
 
-### **Explanation of Changes**:
-1. **Headers**: I've used `##` to create different sections with titles, and `###` for subsection titles.
-2. **Code blocks**: I've wrapped the code snippets in triple backticks (```) to format them correctly for Markdown. For SQL and PHP code, I used the respective language identifier (`sql`, `php`).
-3. **Bold and Italics**: I have used bold (`**`) for important terms like "Unsafe SQL Injection Test" and "Safe SQL Injection Test".
-4. **Lists**: I've used lists properly for steps and explanations using `1.` and `-`.
-
-### **How to use this**:
-- Copy and paste this into your `README.md` file in your GitHub repository.
-- It should render properly when viewed on GitHub or any Markdown viewer.
 
 
 
