@@ -1,4 +1,7 @@
-# Report on Creating a Database and SQL Injection Test
+# SQL Injection
+![Logo](/2.png)
+
+## Create a Database and SQL Injection Test
 
 ## 1. Creating the Database
 Initially, we will create a new database that contains a users table. In this example, we will have a database named `auth` and a `users` table containing user information such as username and email.
