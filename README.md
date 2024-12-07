@@ -40,8 +40,8 @@ INSERT INTO users (username, email) VALUES ('admin_root', 'admin_root@example.co
 We now have a database with user data. Next, we will create a PHP page with a form to input the username, which will send the data to the database using an unsafe query (to show how SQL Injection occurs) and a safe query using Prepared Statements.
 
 PHP File (index.php):
-php
-```
+```php
+
 <?php
 // Database connection settings
 $dsn = "mysql:host=localhost;dbname=auth;charset=utf8";
@@ -109,8 +109,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 Now, we will create an HTML page with a form to input the username, which will be sent to ```index.php ```for processing.
 
 HTML File (form.html):
-html
-```
+```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,7 +179,7 @@ html
 ```
 5. Explanation of How to Perform the Test
 Unsafe SQL Injection Test: When you enter a username like ```1' OR 1=1 # ``` in the form, it will retrieve all user data from the database, exposing it to a significant security risk.
-![Logo](/2.png)
+![Logo](/1.png)
 Safe SQL Injection Test: By using prepared statements, the query is safe, and the application will not be vulnerable to SQL Injection attacks since the inputs are validated and treated securely.
 7. Security Notes:
 An example of how SQL Injection occurs with unsafe queries has been shown.
