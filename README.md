@@ -6,9 +6,10 @@ Steps to Create the Database:
 2.	Create a new database using the following SQL query:
 sql
 نسخ الكود
-CREATE DATABASE auth;
-3.	After creating the database, select it to start adding tables.
-4.	To create the users table, use the following query:
+`CREATE DATABASE auth;`
+
+4.	After creating the database, select it to start adding tables.
+5.	To create the users table, use the following query:
 sql
 نسخ الكود
 USE auth;
